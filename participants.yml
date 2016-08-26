@@ -1,0 +1,4 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true #Sends health status to Eureka based on the actuator endpoint /health
