@@ -1,0 +1,4 @@
+turbine:
+  appConfig: web,races
+  aggregator:
+    clusterConfig: WEB,RACES
