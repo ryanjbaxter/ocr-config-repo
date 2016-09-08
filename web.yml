@@ -1,8 +1,12 @@
 zuul:
   retryable: true
   routes:
-    races: /races/**
-    participants: /paticipants/**
+    races:
+      path: /races/**
+      retryable: true
+    participants:
+      path: /paticipants/**
+      retryable: true
 
 ribbon:
   ConnectTimeout: 60000
