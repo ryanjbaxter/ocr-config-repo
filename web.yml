@@ -16,8 +16,9 @@ hystrix:
     default:
       execution:
         isolation:
+          strategy: THREAD
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 100000
 ---
 spring:
   profiles: devcloud
