@@ -6,7 +6,7 @@ zuul:
       # retryable: true
     participants:
       path: /participants/**
-      retryable: true
+      retryable: false
 
 ribbon:
   ConnectTimeout: 60000
