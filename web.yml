@@ -5,7 +5,7 @@ zuul:
       path: /races/**
       # retryable: true
     participants:
-      path: /paticipants/**
+      path: /participants/**
       retryable: true
 
 ribbon:
