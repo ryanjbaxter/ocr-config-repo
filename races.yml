@@ -4,7 +4,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.ocr-eureka.credentials.uri:http://ocr-eureka-cf.cfapps.io//eureka/}
+      defaultZone: ${vcap.services.ocr-eureka.credentials.uri:http://ocr-eureka-cf.cfapps.io/eureka/}
   instance:
     hostname: ${vcap.application.uris[0]:localhost}
     metadataMap:
