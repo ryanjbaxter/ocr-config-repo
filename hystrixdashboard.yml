@@ -2,14 +2,3 @@ turbine:
   appConfig: web,races
   aggregator:
     clusterConfig: WEB,RACES
----
-spring:
-  profiles: devcloud
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${vcap.services.ocr-eureka.credentials.uri:http://ocr-eureka-cf.cfapps.io/eureka/}
-  instance:
-    hostname: ${vcap.application.uris[0]:localhost}
-    metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
