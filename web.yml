@@ -1,5 +1,5 @@
 zuul:
-#   retryable: false
+  retryable: true
   routes:
     races:
       path: /races/**
