@@ -18,6 +18,9 @@ spring:
 eureka:
   instance:
     nonSecurePort: 80
+management:
+  server:
+    port: 80
 
 ---
 spring:
