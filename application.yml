@@ -18,6 +18,9 @@ spring:
 eureka:
   instance:
     nonSecurePort: 80
+    metadataMap:
+      management:
+        port: 80
 
 ---
 spring:
